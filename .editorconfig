@@ -9,6 +9,6 @@ charset = utf-8
 
 # Matches multiple files with brace expansion notation
 
-[*.{sh,html,js,ts,css,scss,styl,md}]
+[*.{sh,html,js,ts,css,scss,styl,md,json,yml}]
 indent_style = space
 indent_size = 2
