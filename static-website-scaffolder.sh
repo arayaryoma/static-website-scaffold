@@ -48,6 +48,8 @@ curl -L -s "https://raw.githubusercontent.com/Allajah/static-website-scaffold/ma
 
 curl -L -s "https://raw.githubusercontent.com/Allajah/static-website-scaffold/master/lib/ja.yml" > src/assets/i18n/ja.yml
 
+curl -L -s "https://raw.githubusercontent.com/Allajah/static-website-scaffold/master/.editorconfig" > .editorconfig
+
 curl -o src/assets/images/michelle.gif "https://raw.githubusercontent.com/Allajah/static-website-scaffold/master/lib/michelle.gif"
 
 npm install add-npm-scripts
