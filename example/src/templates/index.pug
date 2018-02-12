@@ -1,0 +1,9 @@
+- const __ = htmlWebpackPlugin.options.i18n
+html
+  head
+    meta(charset="utf-8")
+    title New Web Site
+  body
+    h2 !{__('person.name')}
+    img(src=require('../assets/images/michelle.gif') alt="Michelle")
+
