@@ -16,6 +16,7 @@ copy-webpack-plugin
 extract-text-webpack-plugin
 file-loader
 html-loader
+pug-loader
 html-webpack-plugin
 i18n-webpack-plugin
 js-yaml
@@ -38,7 +39,7 @@ mkdir -p public
 
 curl -L -s "https://www.gitignore.io/api/macos,linux,node" > .gitignore
 
-curl -L -s "https://raw.githubusercontent.com/Allajah/static-website-scaffold/master/lib/index.html" > src/templates/index.html
+curl -L -s "https://raw.githubusercontent.com/Allajah/static-website-scaffold/master/lib/index.pug" > src/templates/index.pug
 
 curl -L -s "https://raw.githubusercontent.com/Allajah/static-website-scaffold/master/lib/index.js" > src/scripts/index.js
 
