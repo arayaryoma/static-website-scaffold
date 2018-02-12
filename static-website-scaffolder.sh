@@ -16,9 +16,9 @@ copy-webpack-plugin
 extract-text-webpack-plugin
 file-loader
 html-loader
+pug
 pug-loader
 html-webpack-plugin
-i18n-webpack-plugin
 js-yaml
 rimraf
 stylus
