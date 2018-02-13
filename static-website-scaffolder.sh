@@ -31,6 +31,12 @@ webpack-dev-server
 
 npm install --save-dev $devDependencies
 
+dependencies="
+normalize.css
+"
+
+npm install --save $dependencies
+
 mkdir -p src/styles
 mkdir -p src/scripts
 mkdir -p src/templates
