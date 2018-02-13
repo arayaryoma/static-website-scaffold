@@ -23,6 +23,8 @@ js-yaml
 rimraf
 stylus
 stylus-loader
+style-loader
+css-loader
 webpack
 webpack-dev-server
 "
