@@ -45,6 +45,8 @@ curl -L -s "https://raw.githubusercontent.com/Allajah/static-website-scaffold/ma
 
 curl -L -s "https://raw.githubusercontent.com/Allajah/static-website-scaffold/master/lib/styles/main.styl" > src/styles/main.styl
 
+curl -L -s "https://raw.githubusercontent.com/Allajah/static-website-scaffold/master/lib/styles/fonts.styl" > src/styles/fonts.styl
+
 curl -L -s "https://raw.githubusercontent.com/Allajah/static-website-scaffold/master/lib/webpack.config.js" > webpack.config.js
 
 curl -L -s "https://raw.githubusercontent.com/Allajah/static-website-scaffold/master/lib/i18n/ja.yml" > src/assets/i18n/ja.yml
@@ -52,6 +54,11 @@ curl -L -s "https://raw.githubusercontent.com/Allajah/static-website-scaffold/ma
 curl -L -s "https://raw.githubusercontent.com/Allajah/static-website-scaffold/master/.editorconfig" > .editorconfig
 
 curl -o src/assets/images/michelle.gif "https://raw.githubusercontent.com/Allajah/static-website-scaffold/master/lib/images/michelle.gif"
+
+git clone https://github.com/Allajah/AlphaNSCjp.git src/assets/fonts/AlphaNSCjp
+rm -rf src/assets/fonts/AlphaNSCjp/.git
+
+
 
 npm install add-npm-scripts
 ./node_modules/.bin/add-npm-scripts start "webpack-dev-server"
