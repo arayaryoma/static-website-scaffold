@@ -27,6 +27,7 @@ stylus-loader
 style-loader
 css-loader
 webpack
+webpack-cli
 webpack-dev-server
 "
 
