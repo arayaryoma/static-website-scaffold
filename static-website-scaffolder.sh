@@ -29,6 +29,9 @@ css-loader
 webpack
 webpack-cli
 webpack-dev-server
+husky
+prettier
+pretty-quick
 "
 
 npm install --save-dev $devDependencies
@@ -74,4 +77,5 @@ npm install add-npm-scripts
 ./node_modules/.bin/add-npm-scripts start "webpack-dev-server --mode development"
 ./node_modules/.bin/add-npm-scripts start:prd "NODE_ENV=production webpack-dev-server --mode production"
 ./node_modules/.bin/add-npm-scripts build "rimraf dist && NODE_ENV=production webpack --mode production"
+./node_modules/.bin/add-npm-scripts precommit "pretty-quick --staged"
 npm uninstall add-npm-scripts
