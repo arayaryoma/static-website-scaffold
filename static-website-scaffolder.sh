@@ -13,13 +13,13 @@ babel-polyfill
 babel-preset-env
 cache-loader
 copy-webpack-plugin
-extract-text-webpack-plugin
-style-ext-html-webpack-plugin
 file-loader
 html-loader
 pug
 pug-loader
 html-webpack-plugin
+mini-css-extract-plugin
+optimize-css-assets-webpack-plugin
 js-yaml
 rimraf
 stylus
@@ -71,7 +71,7 @@ rm -rf src/assets/fonts/AlphaNSCjp/.git
 
 
 npm install add-npm-scripts
-./node_modules/.bin/add-npm-scripts start "webpack-dev-server"
-./node_modules/.bin/add-npm-scripts start-prd "NODE_ENV=production webpack-dev-server"
-./node_modules/.bin/add-npm-scripts build "rimraf dist && NODE_ENV=production webpack"
+./node_modules/.bin/add-npm-scripts start "webpack-dev-server --mode development"
+./node_modules/.bin/add-npm-scripts start:prd "NODE_ENV=production webpack-dev-server --mode production"
+./node_modules/.bin/add-npm-scripts build "rimraf dist && NODE_ENV=production webpack --mode production"
 npm uninstall add-npm-scripts
