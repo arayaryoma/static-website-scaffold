@@ -1,3 +1,5 @@
+# static-website-scaffold
+
 ## How to use
 
 ```bash
