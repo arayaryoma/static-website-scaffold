@@ -1,10 +1,8 @@
 const path = require('path');
 const HtmlPlugin = require('html-webpack-plugin');
-const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const OptimizeCSSAssetsPlugin = require("optimize-css-assets-webpack-plugin");
 const CopyWebpackPlugin = require('copy-webpack-plugin');
-const StyleExtHtmlPlugin = require('style-ext-html-webpack-plugin');
 const yaml = require('js-yaml');
 const fs = require('fs');
 const PRODUCTION = (process.env.NODE_ENV === 'production');
@@ -70,10 +68,7 @@ function config(lang) {
         },
         {
           test: /\.(styl)$/,
-          use: PRODUCTION ? ExtractTextPlugin.extract({
-              use: ['css-loader', 'stylus-loader']
-            }) :
-            [{
+          use: [{
               loader: 'style-loader',
             }, {
               loader: 'css-loader',
@@ -90,9 +85,7 @@ function config(lang) {
         },
         {
           test: /\.css$/,
-          use: PRODUCTION ? ExtractTextPlugin.extract({
-            use: ['css-loader']
-          }) : ['style-loader', 'css-loader']
+          use: ['style-loader', 'css-loader']
         },
 
         {
