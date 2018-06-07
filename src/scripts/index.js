@@ -1,1 +1,1 @@
-import '../styles/main.styl';
+import "../styles/main.styl";
