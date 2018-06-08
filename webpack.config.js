@@ -73,7 +73,7 @@ function config(lang) {
           test: /\.(styl)$/,
           use: [
             {
-              loader: "style-loader"
+              loader: MiniCssExtractPlugin.loader
             },
             {
               loader: "css-loader",
@@ -91,7 +91,7 @@ function config(lang) {
         },
         {
           test: /\.css$/,
-          use: ["style-loader", "css-loader"]
+          use: [MiniCssExtractPlugin.loader, "css-loader"]
         },
 
         {
