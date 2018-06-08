@@ -2,6 +2,8 @@
 
 ## How to use
 
+First, make your project directory with `mkdir your-project`
+
 ```bash
 curl -s https://raw.githubusercontent.com/Allajah/static-website-scaffold/master/static-website-scaffolder.sh | bash
 ```
