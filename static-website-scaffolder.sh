@@ -68,10 +68,6 @@ curl -L -s "https://raw.githubusercontent.com/Allajah/static-website-scaffold/ma
 
 curl -o src/assets/images/michelle.gif "https://raw.githubusercontent.com/Allajah/static-website-scaffold/master/src/assets/images/michelle.gif"
 
-git clone https://github.com/Allajah/AlphaNSCjp.git src/assets/fonts/AlphaNSCjp
-rm -rf src/assets/fonts/AlphaNSCjp/.git
-
-
 
 npm install add-npm-scripts
 ./node_modules/.bin/add-npm-scripts start "webpack-dev-server --mode development"
