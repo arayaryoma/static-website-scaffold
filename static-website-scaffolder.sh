@@ -52,21 +52,21 @@ mkdir -p public
 
 curl -L -s "https://www.gitignore.io/api/macos,linux,node" > .gitignore
 
-curl -L -s "https://raw.githubusercontent.com/Allajah/static-website-scaffold/master/src/templates/index.pug" > src/templates/index.pug
+curl -L -s "https://raw.githubusercontent.com/arayaryoma/static-website-scaffold/master/src/templates/index.pug" > src/templates/index.pug
 
-curl -L -s "https://raw.githubusercontent.com/Allajah/static-website-scaffold/master/src/scripts/index.js" > src/scripts/index.js
+curl -L -s "https://raw.githubusercontent.com/arayaryoma/static-website-scaffold/master/src/scripts/index.js" > src/scripts/index.js
 
-curl -L -s "https://raw.githubusercontent.com/Allajah/static-website-scaffold/master/src/styles/main.styl" > src/styles/main.styl
+curl -L -s "https://raw.githubusercontent.com/arayaryoma/static-website-scaffold/master/src/styles/main.styl" > src/styles/main.styl
 
-curl -L -s "https://raw.githubusercontent.com/Allajah/static-website-scaffold/master/src/styles/fonts.styl" > src/styles/fonts.styl
+curl -L -s "https://raw.githubusercontent.com/arayaryoma/static-website-scaffold/master/src/styles/fonts.styl" > src/styles/fonts.styl
 
-curl -L -s "https://raw.githubusercontent.com/Allajah/static-website-scaffold/master/webpack.config.js" > webpack.config.js
+curl -L -s "https://raw.githubusercontent.com/arayaryoma/static-website-scaffold/master/webpack.config.js" > webpack.config.js
 
-curl -L -s "https://raw.githubusercontent.com/Allajah/static-website-scaffold/master/src/assets/i18n/ja.yml" > src/assets/i18n/ja.yml
+curl -L -s "https://raw.githubusercontent.com/arayaryoma/static-website-scaffold/master/src/assets/i18n/ja.yml" > src/assets/i18n/ja.yml
 
-curl -L -s "https://raw.githubusercontent.com/Allajah/static-website-scaffold/master/.editorconfig" > .editorconfig
+curl -L -s "https://raw.githubusercontent.com/arayaryoma/static-website-scaffold/master/.editorconfig" > .editorconfig
 
-curl -o src/assets/images/michelle.gif "https://raw.githubusercontent.com/Allajah/static-website-scaffold/master/src/assets/images/michelle.gif"
+curl -o src/assets/images/michelle.gif "https://raw.githubusercontent.com/arayaryoma/static-website-scaffold/master/src/assets/images/michelle.gif"
 
 
 npm install add-npm-scripts
