@@ -30,7 +30,7 @@ const internationalize = lang => {
 
 function config(lang) {
   return {
-    entry: ["babel-polyfill", "./src/scripts/index.js"],
+    entry: ["@babel/polyfill", "./src/scripts/index.js"],
     resolve: {
       extensions: [".js", ".json"]
     },
@@ -65,7 +65,7 @@ function config(lang) {
           use: {
             loader: "babel-loader",
             options: {
-              presets: ["babel-preset-env"]
+              presets: ["@babel/preset-env"]
             }
           }
         },
