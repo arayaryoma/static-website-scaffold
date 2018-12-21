@@ -7,10 +7,10 @@ fi
 
 npm init -y
 devDependencies="
-babel-core
+@babel/core
+@babel/polyfill
+@babel/preset-env
 babel-loader
-babel-polyfill
-babel-preset-env
 cache-loader
 copy-webpack-plugin
 file-loader
